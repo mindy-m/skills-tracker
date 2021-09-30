@@ -11,7 +11,7 @@ public class SkillsController {
 //    You need to have an h1 with the title “Skills Tracker”, an h2, and an ol containing three programming languages
 //    of your choosing.
 
-    @GetMapping("skills")
+    @GetMapping("")
     @ResponseBody
     public String displayMySkills() {
         return "<html>" +
@@ -30,4 +30,45 @@ public class SkillsController {
                     "</body>" +
                 "</html>";
     }
+
+    @GetMapping("form")
+    @ResponseBody
+    public String orderYourLanguage() {
+        return "<html>" +
+                    "<body>" +
+                        "<form action='hello' method='post'>" +
+                            "<label for='name'>Name:</label>" +
+                            "<br>" +
+                            "<input type='text' name='name'>" +
+                            "<br>" +
+                            "<label for='favorite'>My favorite language:</label>" +
+                            "<br>" +
+                            "<select name='favorite' id='favorite'>" +
+                                "<option value='javascript'>JavaScript</option>" +
+                                "<option value='java'>Java</option>" +
+                                "<option value='python'>Python</option>" +
+                            "</select>" +
+                            "<br>" +
+                            "<label for='secondFavorite'>My second favorite language:</label>" +
+                            "<br>" +
+                            "<select name='secondFavorite' id='secondfavorite'>" +
+                                "<option value='javascript'>JavaScript</option>" +
+                                "<option value='java'>Java</option>" +
+                                "<option value='python'>Python</option>" +
+                            "</select>" +
+                            "<br>" +
+                            "<label for='thirdFavorite'>My third favorite language:</label>" +
+                            "<br>" +
+                            "<select name='thirdFavorite' id='thirdFavorite'>" +
+                                "<option value='javascript'>JavaScript</option>" +
+                                "<option value='java'>Java</option>" +
+                                "<option value='python'>Python</option>" +
+                            "</select>" +
+                            "<br>" +
+                            "<input type='submit' value='Submit'>" +
+                        "</form>" +
+                    "</body>" +
+        "</html>";
+    }
+
 }
