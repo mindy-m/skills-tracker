@@ -35,12 +35,13 @@ public class SkillsController {
     @ResponseBody
     public String orderYourLanguage() {
         return "<html>" +
-                    "<body>" +
+                    "<body style='background-color:#FDDCDF;font-family:Consolas,monaco,monospace;" +
+                    "padding-left:40%;padding-top:10%;>" +
                         "<form action='hello' method='post'>" +
                             "<label for='name'>Name:</label>" +
                             "<br>" +
                             "<input type='text' name='name'>" +
-                            "<br>" +
+                            "<br>" + "<br>" +
                             "<label for='favorite'>My favorite language:</label>" +
                             "<br>" +
                             "<select name='favorite' id='favorite'>" +
@@ -48,15 +49,15 @@ public class SkillsController {
                                 "<option value='java'>Java</option>" +
                                 "<option value='python'>Python</option>" +
                             "</select>" +
-                            "<br>" +
+                            "<br>" + "<br>" +
                             "<label for='secondFavorite'>My second favorite language:</label>" +
                             "<br>" +
-                            "<select name='secondFavorite' id='secondfavorite'>" +
+                            "<select name='secondFavorite' id='secondFavorite'>" +
                                 "<option value='javascript'>JavaScript</option>" +
                                 "<option value='java'>Java</option>" +
                                 "<option value='python'>Python</option>" +
                             "</select>" +
-                            "<br>" +
+                            "<br>" + "<br>" +
                             "<label for='thirdFavorite'>My third favorite language:</label>" +
                             "<br>" +
                             "<select name='thirdFavorite' id='thirdFavorite'>" +
@@ -64,7 +65,7 @@ public class SkillsController {
                                 "<option value='java'>Java</option>" +
                                 "<option value='python'>Python</option>" +
                             "</select>" +
-                            "<br>" +
+                            "<br>" + "<br>" +
                             "<input type='submit' value='Submit'>" +
                         "</form>" +
                     "</body>" +
