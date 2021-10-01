@@ -36,7 +36,7 @@ public class SkillsController {
     public String orderYourLanguage() {
         return "<html>" +
                     "<body style='background-color:#FDDCDF;font-family:Consolas,monaco,monospace;" +
-                    "padding-left:40%;padding-top:10%;>" +
+                    "padding-left:40%;padding-top:10%;'>" +
                         "<form action='form' method='post'>" +
                             "<label for='name'>Name:</label>" +
                             "<br>" +
@@ -45,25 +45,25 @@ public class SkillsController {
                             "<label for='favorite'>My favorite language:</label>" +
                             "<br>" +
                             "<select name='favorite' id='favorite'>" +
-                                "<option value='javascript'>JavaScript</option>" +
-                                "<option value='java'>Java</option>" +
-                                "<option value='python'>Python</option>" +
+                                "<option value='Javascript'>JavaScript</option>" +
+                                "<option value='Java'>Java</option>" +
+                                "<option value='Python'>Python</option>" +
                             "</select>" +
                             "<br>" + "<br>" +
                             "<label for='secondFavorite'>My second favorite language:</label>" +
                             "<br>" +
                             "<select name='secondFavorite' id='secondFavorite'>" +
-                                "<option value='javascript'>JavaScript</option>" +
-                                "<option value='java'>Java</option>" +
-                                "<option value='python'>Python</option>" +
+                                "<option value='Javascript'>JavaScript</option>" +
+                                "<option value='Java'>Java</option>" +
+                                "<option value='Python'>Python</option>" +
                             "</select>" +
                             "<br>" + "<br>" +
                             "<label for='thirdFavorite'>My third favorite language:</label>" +
                             "<br>" +
                             "<select name='thirdFavorite' id='thirdFavorite'>" +
-                                "<option value='javascript'>JavaScript</option>" +
-                                "<option value='java'>Java</option>" +
-                                "<option value='python'>Python</option>" +
+                                "<option value='Javascript'>JavaScript</option>" +
+                                "<option value='Java'>Java</option>" +
+                                "<option value='Python'>Python</option>" +
                             "</select>" +
                             "<br>" + "<br>" +
                             "<input type='submit' value='Submit'>" +
@@ -81,7 +81,7 @@ public class SkillsController {
                 "<body style='background-color:#FDDCDF;font-family:Consolas,monaco,monospace;'>" +
                 "<br>" +
                 "<br>" +
-                "<h1 style='color:purple;text-align:center;'>" + name + "'s Skillz</h1>" +
+                "<h1 style='color:purple;text-align:center;text-shadow:2px 2px #FF0000;'>" + name + "'s Skillz</h1>" +
                 "<br>" +
                 "<ol style='padding-left: 48%;'>" +
                 "<li>" + favorite +"</li>" +
