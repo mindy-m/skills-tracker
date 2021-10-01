@@ -84,9 +84,9 @@ public class SkillsController {
                 "<h1 style='color:purple;text-align:center;text-shadow:2px 2px #FF0000;'>" + name + "'s Skillz</h1>" +
                 "<br>" +
                 "<ol style='padding-left: 48%;'>" +
-                "<li>" + favorite +"</li>" +
-                "<li>" + secondFavorite + "</li>" +
-                "<li>" + thirdFavorite + "</li>" +
+                "<li style='color:blue;'>" + favorite +"</li>" +
+                "<li style='color:green;'>" + secondFavorite + "</li>" +
+                "<li style='color:purple;'>" + thirdFavorite + "</li>" +
                 "</ol>" +
                 "</body>" +
                 "</html>";
