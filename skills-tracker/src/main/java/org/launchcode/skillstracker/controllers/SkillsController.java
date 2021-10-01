@@ -31,13 +31,13 @@ public class SkillsController {
                 "</html>";
     }
 
-    @GetMapping("form")
+    @GetMapping(value = "form")
     @ResponseBody
     public String orderYourLanguage() {
         return "<html>" +
                     "<body style='background-color:#FDDCDF;font-family:Consolas,monaco,monospace;" +
                     "padding-left:40%;padding-top:10%;>" +
-                        "<form action='hello' method='post'>" +
+                        "<form action='form' method='post'>" +
                             "<label for='name'>Name:</label>" +
                             "<br>" +
                             "<input type='text' name='name'>" +
@@ -72,4 +72,23 @@ public class SkillsController {
         "</html>";
     }
 
+
+    @PostMapping(value="form")
+    @ResponseBody
+    public String displayCustomSkills(@RequestParam String name, String favorite, String secondFavorite,
+                                      String thirdFavorite) {
+        return "<html>" +
+                "<body style='background-color:#FDDCDF;font-family:Consolas,monaco,monospace;'>" +
+                "<br>" +
+                "<br>" +
+                "<h1 style='color:purple;text-align:center;'>" + name + "'s Skillz</h1>" +
+                "<br>" +
+                "<ol style='padding-left: 48%;'>" +
+                "<li>" + favorite +"</li>" +
+                "<li>" + secondFavorite + "</li>" +
+                "<li>" + thirdFavorite + "</li>" +
+                "</ol>" +
+                "</body>" +
+                "</html>";
+    }
 }
